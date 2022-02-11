@@ -1,4 +1,4 @@
-package com.example.sample
+package com.example.sample.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

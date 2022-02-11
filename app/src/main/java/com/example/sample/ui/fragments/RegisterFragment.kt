@@ -1,22 +1,22 @@
-package com.example.sample.fragments
+package com.example.sample.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.sample.databinding.FragmentTaskBinding
+import com.example.sample.databinding.FragmentRegisterBinding
 
-class TaskFragment : Fragment() {
+class RegisterFragment : Fragment() {
 
-    private var _binding: FragmentTaskBinding? = null
-    private val binding: FragmentTaskBinding get() = _binding!!
+    private var _binding: FragmentRegisterBinding? = null
+    private val binding: FragmentRegisterBinding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentTaskBinding.inflate(inflater, container, false)
+        _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
     }
 
