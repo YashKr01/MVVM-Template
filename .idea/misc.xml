@@ -4,6 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/activity_main.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_add_update_task.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_home.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_language.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_login.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_news.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_register.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_task.xml" value="0.13766566908935443" />
         <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_weather.xml" value="0.13766566908935443" />
       </map>
     </option>
