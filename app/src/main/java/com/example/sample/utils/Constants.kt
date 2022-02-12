@@ -12,4 +12,6 @@ object Constants {
     const val LOW = "low"
     const val MEDIUM = "medium"
 
+    const val DATABASE_NAME = "TASK_DATABASE"
+
 }
