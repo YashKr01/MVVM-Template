@@ -70,6 +70,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_4sdp"
             android:layout_marginBottom="@dimen/_8sdp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:fontFamily="@font/ubuntu_medium"
             android:padding="@dimen/_8sdp"
             android:text="@string/read_more"
@@ -85,11 +88,14 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
             android:padding="@dimen/_8sdp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
             android:src="@drawable/ic_share"
             app:layout_constraintBottom_toBottomOf="@id/itemReadMore"
             app:layout_constraintEnd_toEndOf="@id/itemNewsDate"
             app:layout_constraintTop_toTopOf="@id/itemReadMore"
-            app:tint="@color/colorBLue" />
+            app:tint="@color/colorBLue"
+            android:focusable="true" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

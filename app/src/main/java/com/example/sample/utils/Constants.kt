@@ -8,4 +8,8 @@ object Constants {
     const val WEATHER_BASE_URL = "http://api.weatherapi.com/v1/"
     const val WEATHER_API_KEY = "e15a278246414a5abea182114211811"
 
+    const val HIGH = "high"
+    const val LOW = "low"
+    const val MEDIUM = "medium"
+
 }

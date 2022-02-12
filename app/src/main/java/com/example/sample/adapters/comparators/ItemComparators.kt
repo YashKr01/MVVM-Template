@@ -1,4 +1,4 @@
-package com.example.sample.adapters
+package com.example.sample.adapters.comparators
 
 import androidx.recyclerview.widget.DiffUtil
 import com.example.sample.model.BookEntity

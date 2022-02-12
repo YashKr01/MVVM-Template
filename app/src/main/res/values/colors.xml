@@ -10,6 +10,6 @@
     <color name="colorLightBLue">#B3E5FC</color>
     <color name="colorPlaceHolderBackground">#F1EFEF</color>
     <color name="colorPriorityLow">#64DD17</color>
-    <color name="colorPriorityHigh">#F50057</color>
-    <color name="colorPriorityMedium">#FFC400</color>
+    <color name="colorPriorityHigh">#FF4081</color>
+    <color name="colorPriorityMedium">#FFD740</color>
 </resources>

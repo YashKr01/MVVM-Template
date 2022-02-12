@@ -13,6 +13,17 @@
         android:layout_height="match_parent"
         android:padding="@dimen/_4sdp">
 
+        <ImageView
+            android:id="@+id/itemTaskPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_circle"
+            app:layout_constraintBottom_toBottomOf="@id/itemTaskTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/itemTaskTitle"
+            tools:tint="@color/colorPriorityHigh" />
+
         <TextView
             android:id="@+id/itemTaskTitle"
             android:layout_width="0dp"
@@ -24,19 +35,17 @@
             android:padding="@dimen/_6sdp"
             android:textColor="@color/colorTextPrimary"
             android:textSize="@dimen/_16ssp"
-            app:drawableStartCompat="@drawable/ic_circle"
-            app:drawableTint="@color/colorPriorityLow"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/itemTaskPriority"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/placeholder_text" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="@dimen/_1sdp"
-            android:background="@color/colorMargin"
             android:layout_marginStart="@dimen/_4sdp"
             android:layout_marginEnd="@dimen/_4sdp"
+            android:background="@color/colorMargin"
             app:layout_constraintEnd_toEndOf="@id/itemTaskTitle"
             app:layout_constraintStart_toStartOf="@id/itemTaskTitle"
             app:layout_constraintTop_toBottomOf="@id/itemTaskTitle" />
@@ -58,9 +67,12 @@
             android:id="@+id/itemTaskUpdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
             android:drawablePadding="@dimen/_8sdp"
+            android:focusable="true"
             android:fontFamily="@font/ubuntu_regular"
-            android:padding="@dimen/_8sdp"
+            android:padding="@dimen/_6sdp"
             android:text="@string/update"
             android:textColor="@color/colorTextPrimary"
             android:textSize="@dimen/_14ssp"
@@ -73,9 +85,13 @@
             android:id="@+id/itemTaskDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
             android:drawablePadding="@dimen/_8sdp"
+            android:focusable="true"
             android:fontFamily="@font/ubuntu_regular"
-            android:padding="@dimen/_8sdp"
+            android:padding="@dimen/_6sdp"
             android:text="@string/update"
             android:textColor="@color/colorTextPrimary"
             android:textSize="@dimen/_14ssp"
