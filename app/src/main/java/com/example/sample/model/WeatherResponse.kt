@@ -34,4 +34,6 @@ data class Current(
     val temperature: Double,
     @SerializedName("wind_kph")
     val windSpeed: Double,
+    @SerializedName("condition")
+    val condition: Condition
 )

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/drawable/ic_circle.xml" value="0.1175" />
         <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/activity_main.xml" value="0.1527777777777778" />
         <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_add_update_task.xml" value="0.13766566908935443" />
         <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_home.xml" value="0.13766566908935443" />
@@ -12,6 +13,10 @@
         <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_register.xml" value="0.13766566908935443" />
         <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_task.xml" value="0.13766566908935443" />
         <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/fragment_weather.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/item_book.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/item_news.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/item_task.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/yash/AndroidStudioProjects/Sample/app/src/main/res/layout/item_weather.xml" value="0.14666666666666667" />
       </map>
     </option>
   </component>

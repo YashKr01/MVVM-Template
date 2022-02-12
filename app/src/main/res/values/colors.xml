@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorWhite">#F3F3F3</color>
-    <color name="colorTextPrimary">#272727</color>
-    <color name="colorTextSecondary">#AAAAAA</color>
+    <color name="colorTextPrimary">#2C2C2C</color>
+    <color name="colorTextSecondary">#979696</color>
     <color name="colorMargin">#E6E6E6</color>
     <color name="colorPrimary">#FF8F00</color>
     <color name="colorRed">#D84315</color>
     <color name="colorBLue">#0277BD</color>
     <color name="colorLightBLue">#B3E5FC</color>
+    <color name="colorPlaceHolderBackground">#F1EFEF</color>
+    <color name="colorPriorityLow">#64DD17</color>
+    <color name="colorPriorityHigh">#F50057</color>
+    <color name="colorPriorityMedium">#FFC400</color>
 </resources>

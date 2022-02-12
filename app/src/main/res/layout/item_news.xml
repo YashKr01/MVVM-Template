@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:cardElevation="@dimen/_8sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/itemNewsImage"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@color/colorPlaceHolderBackground"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemNewsDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemNewsImage"
+            tools:text="Feb 3, 2022" />
+
+        <TextView
+            android:id="@+id/itemNewsTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="@id/itemNewsDate"
+            app:layout_constraintStart_toStartOf="@id/itemNewsDate"
+            app:layout_constraintTop_toBottomOf="@id/itemNewsDate"
+            tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+
+        <TextView
+            android:id="@+id/itemNewsDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@id/itemNewsDate"
+            app:layout_constraintStart_toStartOf="@id/itemNewsDate"
+            app:layout_constraintTop_toBottomOf="@id/itemNewsTitle"
+            tools:text="@string/placeholder_text" />
+
+        <TextView
+            android:id="@+id/itemReadMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/read_more"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/itemNewsDate"
+            app:layout_constraintTop_toBottomOf="@id/itemNewsDescription" />
+
+        <ImageView
+            android:id="@+id/itemNewsShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_share"
+            app:layout_constraintBottom_toBottomOf="@id/itemReadMore"
+            app:layout_constraintEnd_toEndOf="@id/itemNewsDate"
+            app:layout_constraintTop_toTopOf="@id/itemReadMore"
+            app:tint="@color/colorBLue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
