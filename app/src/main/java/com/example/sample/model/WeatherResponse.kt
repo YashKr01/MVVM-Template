@@ -37,3 +37,5 @@ data class Current(
     @SerializedName("condition")
     val condition: Condition
 )
+
+data class WeatherItem(val title: String, val value: String)

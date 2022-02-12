@@ -1,8 +1,8 @@
 package com.example.sample.model
 
-data class NewsResponse(val articles: List<Article>)
+data class NewsResponse(val articles: List<NewsArticle>)
 
-data class Article(
+data class NewsArticle(
     val description: String,
     val publishedAt: String,
     val title: String,
