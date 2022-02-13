@@ -1,10 +1,8 @@
-package com.example.sample.adapters.recyclerviews
+package com.example.sample.adapters.task
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.example.sample.adapters.comparators.TaskComparator
-import com.example.sample.adapters.viewholders.TaskViewHolder
 import com.example.sample.databinding.ItemTaskBinding
 import com.example.sample.model.TaskEntity
 

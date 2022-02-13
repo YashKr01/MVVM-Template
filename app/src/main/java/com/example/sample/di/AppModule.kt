@@ -2,10 +2,10 @@ package com.example.sample.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.sample.database.TaskDao
+import com.example.sample.data.database.TaskDao
 import com.example.sample.utils.Constants.DATABASE_NAME
-import com.example.sample.database.TaskDatabase
-import com.example.sample.network.ApiInterface
+import com.example.sample.data.database.TaskDatabase
+import com.example.sample.data.network.ApiInterface
 import com.example.sample.utils.Constants.WEATHER_BASE_URL
 import dagger.Module
 import dagger.Provides

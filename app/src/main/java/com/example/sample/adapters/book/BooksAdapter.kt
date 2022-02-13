@@ -1,10 +1,8 @@
-package com.example.sample.adapters.recyclerviews
+package com.example.sample.adapters.book
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.example.sample.adapters.comparators.BooksComparator
-import com.example.sample.adapters.viewholders.BookViewHolder
 import com.example.sample.databinding.ItemBookBinding
 import com.example.sample.model.BookEntity
 

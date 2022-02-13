@@ -1,4 +1,4 @@
-package com.example.sample.database
+package com.example.sample.data.database
 
 import androidx.room.*
 import com.example.sample.model.TaskEntity

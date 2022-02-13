@@ -1,10 +1,8 @@
-package com.example.sample.adapters.recyclerviews
+package com.example.sample.adapters.news
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.example.sample.adapters.comparators.NewsItemComparator
-import com.example.sample.adapters.viewholders.NewsViewHolder
 import com.example.sample.databinding.ItemNewsBinding
 import com.example.sample.model.NewsArticle
 

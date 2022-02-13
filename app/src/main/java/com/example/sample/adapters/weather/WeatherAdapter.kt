@@ -1,10 +1,8 @@
-package com.example.sample.adapters.recyclerviews
+package com.example.sample.adapters.weather
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.example.sample.adapters.comparators.WeatherItemComparator
-import com.example.sample.adapters.viewholders.WeatherViewHolder
 import com.example.sample.databinding.ItemWeatherBinding
 import com.example.sample.model.WeatherItem
 

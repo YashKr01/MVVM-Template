@@ -1,4 +1,4 @@
-package com.example.sample.adapters.viewholders
+package com.example.sample.adapters.weather
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sample.databinding.ItemWeatherBinding

@@ -1,4 +1,4 @@
-package com.example.sample.adapters.viewholders
+package com.example.sample.adapters.news
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide

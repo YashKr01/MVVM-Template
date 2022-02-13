@@ -1,4 +1,4 @@
-package com.example.sample.network
+package com.example.sample.data.network
 
 import com.example.sample.model.NewsResponse
 import com.example.sample.model.WeatherResponse

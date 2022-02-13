@@ -1,4 +1,4 @@
-package com.example.sample.adapters.viewholders
+package com.example.sample.adapters.task
 
 import android.content.res.ColorStateList
 import androidx.core.content.ContextCompat
