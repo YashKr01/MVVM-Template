@@ -58,7 +58,7 @@
             android:padding="@dimen/_6sdp"
             android:textColor="@color/colorTextSecondary"
             android:textSize="@dimen/_14ssp"
-            app:layout_constraintEnd_toEndOf="itemTaskTitle"
+            app:layout_constraintEnd_toEndOf="@id/itemTaskTitle"
             app:layout_constraintStart_toStartOf="@id/itemTaskTitle"
             app:layout_constraintTop_toBottomOf="@id/itemTaskTitle"
             tools:text="Due Friday, February 4, 2022" />

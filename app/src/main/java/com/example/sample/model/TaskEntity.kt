@@ -14,5 +14,5 @@ data class TaskEntity(
     val title: String,
     val priority: String,
     val category: String,
-    val date: Date
+    val date: Date?
 ) : Parcelable
