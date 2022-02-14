@@ -25,6 +25,8 @@
     <string name="category">Category</string>
     <string name="none">None</string>
     <string name="add_task">add task</string>
+    <string name="change_language">Change Language</string>
+    <string name="select_language">Select Language</string>
 
     <string-array name="priorities">
         <item>High</item>
