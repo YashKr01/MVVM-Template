@@ -18,4 +18,18 @@
     <string name="new_user_sign_up">don\'t have an account? sign up</string>
     <string name="register">REGISTER</string>
     <string name="already_a_member_login">already a member? login</string>
+    <string name="write_your_task_here">Write your task here</string>
+    <string name="priority">Priority</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="time">Time</string>
+    <string name="category">Category</string>
+    <string name="none">None</string>
+    <string name="add_task">add task</string>
+
+    <string-array name="priorities">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
 </resources>

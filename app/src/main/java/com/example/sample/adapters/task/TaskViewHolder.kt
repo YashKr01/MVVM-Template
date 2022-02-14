@@ -7,9 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.sample.R
 import com.example.sample.databinding.ItemTaskBinding
 import com.example.sample.model.TaskEntity
-import com.example.sample.utils.Constants.HIGH
-import com.example.sample.utils.Constants.LOW
-import com.example.sample.utils.Constants.MEDIUM
+import com.example.sample.utils.Constants.PRIORITY_HIGH
+import com.example.sample.utils.Constants.PRIORITY_LOW
+import com.example.sample.utils.Constants.PRIORITY_MEDIUM
 
 class TaskViewHolder(
     private val binding: ItemTaskBinding,
@@ -34,7 +34,7 @@ class TaskViewHolder(
             itemTaskTitle.text = task.title
             itemTaskDate.text = task.date.toString()
             when (task.priority) {
-                HIGH -> {
+                PRIORITY_HIGH -> {
                     ImageViewCompat.setImageTintList(
                         itemTaskPriority,
                         ColorStateList.valueOf(
@@ -45,7 +45,7 @@ class TaskViewHolder(
                         )
                     )
                 }
-                MEDIUM -> {
+                PRIORITY_MEDIUM -> {
                     ImageViewCompat.setImageTintList(
                         itemTaskPriority,
                         ColorStateList.valueOf(
@@ -56,7 +56,7 @@ class TaskViewHolder(
                         )
                     )
                 }
-                LOW -> {
+                PRIORITY_LOW -> {
                     ImageViewCompat.setImageTintList(
                         itemTaskPriority,
                         ColorStateList.valueOf(

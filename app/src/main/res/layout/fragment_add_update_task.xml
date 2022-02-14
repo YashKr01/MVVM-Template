@@ -1,8 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.AddUpdateTaskFragment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/add_new_task" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Light"
+                app:boxBackgroundColor="@color/colorDenseWhite"
+                app:boxStrokeColor="@color/colorTextPrimary"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/colorTextSecondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/txtTaskTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/write_your_task_here"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorTextSecondary"
+                    android:textCursorDrawable="@null"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dropDownPriority"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/colorTextPrimary"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:layout_constraintEnd_toEndOf="@id/textField"
+                app:layout_constraintStart_toStartOf="@id/textField"
+                app:layout_constraintTop_toBottomOf="@id/textField">
+
+                <AutoCompleteTextView
+                    android:id="@+id/selectedPriority"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:text="@string/priority"
+                    tools:ignore="LabelFor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CalendarView
+                android:id="@+id/datePicker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="@id/dropDownPriority"
+                app:layout_constraintStart_toStartOf="@id/dropDownPriority"
+                app:layout_constraintTop_toBottomOf="@id/dropDownPriority" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/time"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="@id/datePicker"
+                app:layout_constraintTop_toBottomOf="@id/datePicker" />
+
+            <TextView
+                android:id="@+id/txtCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_text_time"
+                android:fontFamily="@font/ubuntu_medium"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/time"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="@id/datePicker"
+                app:layout_constraintTop_toTopOf="@id/txtTime"
+                tools:text="6:04 PM" />
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:drawablePadding="@dimen/_4sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/category"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/_16ssp"
+                app:drawableStartCompat="@drawable/ic_category"
+                app:drawableTint="@color/colorTextPrimary"
+                app:layout_constraintStart_toStartOf="@id/txtTime"
+                app:layout_constraintTop_toBottomOf="@id/txtTime" />
+
+            <TextView
+                android:id="@+id/txtSelectedCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_4sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/none"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintEnd_toEndOf="@id/txtCurrentTime"
+                app:layout_constraintTop_toTopOf="@id/txtCategory" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chipRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="@id/txtCurrentTime"
+                app:layout_constraintStart_toStartOf="@id/txtCategory"
+                app:layout_constraintTop_toBottomOf="@id/txtCategory"
+                tools:listitem="@layout/item_category" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddUpdateTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/add_task"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_14ssp"
+                app:backgroundTint="@color/colorBLue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/chipRecyclerView"
+                app:layout_constraintStart_toStartOf="@id/chipRecyclerView"
+                app:layout_constraintTop_toBottomOf="@id/chipRecyclerView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
