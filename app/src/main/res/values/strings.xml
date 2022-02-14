@@ -10,4 +10,10 @@
     <string name="search">Search</string>
     <string name="weather">Weather</string>
     <string name="show_weather">Show Weather</string>
+    <string name="welcome">WELCOME</string>
+    <string name="to_online_shopping_book_store">To online shopping book store</string>
+    <string name="you_email">You Email</string>
+    <string name="your_password">Your Password</string>
+    <string name="login">login</string>
+    <string name="new_user_sign_up">don\'t have an account? sign up</string>
 </resources>
