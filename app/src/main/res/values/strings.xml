@@ -16,4 +16,6 @@
     <string name="your_password">Your Password</string>
     <string name="login">login</string>
     <string name="new_user_sign_up">don\'t have an account? sign up</string>
+    <string name="register">REGISTER</string>
+    <string name="already_a_member_login">already a member? login</string>
 </resources>
