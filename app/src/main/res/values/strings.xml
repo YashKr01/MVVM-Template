@@ -7,4 +7,7 @@
     <string name="breaking_news">Breaking News</string>
     <string name="online_book_store">Online Book Store</string>
     <string name="no_tasks_added">NO TASKS ADDED</string>
+    <string name="search">Search</string>
+    <string name="weather">Weather</string>
+    <string name="show_weather">Show Weather</string>
 </resources>
