@@ -12,6 +12,6 @@ object Constants {
     const val PRIORITY_MEDIUM = "medium"
     const val PRIORITY_LOW = "low"
 
-    const val DATABASE_NAME = "TASK_DATABASE"
+    const val TASK_DATABASE_NAME = "TASK_DATABASE"
 
 }

@@ -1,14 +1,15 @@
 package com.example.sample.data.database
 
 import androidx.room.*
+import com.example.sample.model.CategoryEntity
 import com.example.sample.model.TaskEntity
-import com.example.sample.utils.Constants.DATABASE_NAME
+import com.example.sample.utils.Constants.TASK_DATABASE_NAME
 import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface TaskDao {
 
-    @Query("SELECT * FROM $DATABASE_NAME")
+    @Query("SELECT * FROM taskentity")
     fun getAllTasks(): Flow<List<TaskEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -16,5 +17,8 @@ interface TaskDao {
 
     @Delete
     suspend fun deleteTask(taskEntity: TaskEntity)
+
+    @Query("SELECT * FROM categoryentity")
+    fun getAllCategories(): Flow<List<CategoryEntity>>
 
 }

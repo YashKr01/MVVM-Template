@@ -3,7 +3,7 @@ package com.example.sample.di
 import android.content.Context
 import androidx.room.Room
 import com.example.sample.data.database.TaskDao
-import com.example.sample.utils.Constants.DATABASE_NAME
+import com.example.sample.utils.Constants.TASK_DATABASE_NAME
 import com.example.sample.data.database.TaskDatabase
 import com.example.sample.data.network.ApiInterface
 import com.example.sample.utils.Constants.WEATHER_BASE_URL
@@ -51,7 +51,7 @@ object AppModule {
     @Provides
     @Singleton
     fun provideDatabase(@ApplicationContext context: Context): TaskDatabase =
-        Room.databaseBuilder(context, TaskDatabase::class.java, DATABASE_NAME)
+        Room.databaseBuilder(context, TaskDatabase::class.java, TASK_DATABASE_NAME)
             .build()
 
     @Provides
