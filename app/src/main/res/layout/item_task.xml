@@ -22,7 +22,7 @@
             app:layout_constraintBottom_toBottomOf="@id/itemTaskTitle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/itemTaskTitle"
-            tools:tint="@color/colorPriorityHigh" />
+            tools:tint="@color/colorPriorityMedium" />
 
         <TextView
             android:id="@+id/itemTaskTitle"

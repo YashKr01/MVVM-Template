@@ -54,4 +54,19 @@
         app:layout_constraintStart_toStartOf="@id/taskRecyclerView"
         app:layout_constraintTop_toTopOf="@id/taskRecyclerView" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12sdp"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/colorBLue"
+        app:elevation="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/colorWhite" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
