@@ -14,4 +14,8 @@ object Constants {
 
     const val TASK_DATABASE_NAME = "TASK_DATABASE"
 
+    const val STATIC_BOOK_URL1 =
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpjDqFmcYFIWgECfWoh1FmyrERPzDl2nikdg&usqp=CAU"
+    const val STATIC_BOOK_URL2 = "https://miro.medium.com/max/1200/1*yPjuFN0R-dy-HT7PmlxeGg.jpeg"
+
 }

@@ -28,6 +28,16 @@
     <string name="change_language">Change Language</string>
     <string name="select_language">Select Language</string>
     <string name="invalid_input">Validate all fields</string>
+    <string name="book_store">Book Store</string>
+    <string name="for_better_purpose">For better purpose</string>
+    <string name="news">News</string>
+    <string name="to_do">To Do</string>
+    <string name="logout">Logout</string>
+    <string name="close">close</string>
+    <string name="open">open</string>
+
+    <string name="the_hobbit">The Hobbit</string>
+    <string name="the_famous_five">The Famous Five</string>
 
     <string-array name="priorities">
         <item>High</item>

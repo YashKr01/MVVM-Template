@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/news" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_weather"
+            android:title="@string/weather" />
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@drawable/ic_todo"
+            android:title="@string/to_do" />
+
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/ic_language"
+            android:title="@string/change_language" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

@@ -2,7 +2,7 @@
 <resources>
     <color name="colorWhite">#F3F3F3</color>
     <color name="colorDenseWhite">#FFFFFF</color>
-    <color name="colorTextPrimary">#2C2C2C</color>
+    <color name="colorTextPrimary">#3A3A3A</color>
     <color name="colorTextSecondary">#979696</color>
     <color name="colorMargin">#E6E6E6</color>
     <color name="colorPrimary">#FF8F00</color>
