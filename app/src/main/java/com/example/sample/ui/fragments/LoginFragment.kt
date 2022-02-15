@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.sample.R
 import com.example.sample.databinding.FragmentLoginBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
@@ -40,14 +41,13 @@ class LoginFragment : Fragment() {
                 Snackbar.make(
                     requireContext(),
                     binding.root,
-                    "Validate all fields",
+                    resources.getString(R.string.invalid_input),
                     Snackbar.LENGTH_SHORT
                 ).show()
             else {
                 auth.signInWithEmailAndPassword(inputEmail, inputPassword)
                     .addOnSuccessListener {
                         findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToHomeFragment())
-                        findNavController().popBackStack()
                     }
                     .addOnFailureListener {
                         Snackbar.make(
