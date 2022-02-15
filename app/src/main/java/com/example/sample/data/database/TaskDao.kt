@@ -21,4 +21,7 @@ interface TaskDao {
     @Query("SELECT * FROM categoryentity")
     fun getAllCategories(): Flow<List<CategoryEntity>>
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertCategory(categoryEntity: CategoryEntity)
+
 }

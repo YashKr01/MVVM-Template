@@ -3,6 +3,7 @@ package com.example.sample.repository
 import androidx.lifecycle.MutableLiveData
 import com.example.sample.data.database.TaskDao
 import com.example.sample.data.network.ApiInterface
+import com.example.sample.model.CategoryEntity
 import com.example.sample.model.NewsArticle
 import com.example.sample.model.TaskEntity
 import com.example.sample.model.WeatherResponse
@@ -56,5 +57,7 @@ class AppRepository @Inject constructor(
     suspend fun deleteArticle(task: TaskEntity) = dao.deleteTask(task)
 
     fun getAllCategories() = dao.getAllCategories()
+
+    suspend fun insertCategory(categoryEntity: CategoryEntity) = dao.insertCategory(categoryEntity)
 
 }
