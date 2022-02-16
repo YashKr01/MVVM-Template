@@ -32,21 +32,21 @@ class AppRepository @Inject constructor(
                     .articles
             newsLiveData.postValue(Resource.Success(response))
         } catch (e: IOException) {
-            newsLiveData.postValue(Resource.Error("ERROR : ${e.message.toString()}", null))
+            newsLiveData.postValue(Resource.Error("No Connection", null))
         } catch (e: HttpException) {
-            newsLiveData.postValue(Resource.Error("ERROR : ${e.message.toString()}", null))
+            newsLiveData.postValue(Resource.Error(e.message.toString(), null))
         }
     }
 
     suspend fun getWeatherResponse(name: String) {
-        newsLiveData.postValue(Resource.Loading(null))
+        weatherLiveData.postValue(Resource.Loading(null))
         try {
             val response = api.getWeatherResponse(name)
             weatherLiveData.postValue(Resource.Success(response))
         } catch (e: IOException) {
-            weatherLiveData.postValue(Resource.Error("ERROR : ${e.message.toString()}", null))
+            weatherLiveData.postValue(Resource.Error("No Connection", null))
         } catch (e: HttpException) {
-            weatherLiveData.postValue(Resource.Error("ERROR : ${e.message.toString()}", null))
+            weatherLiveData.postValue(Resource.Error(e.message.toString(), null))
         }
     }
 

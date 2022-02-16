@@ -23,6 +23,8 @@ data class Location(
     val longitude: Double,
     @SerializedName("name")
     val name: String,
+    @SerializedName("localtime")
+    val date: String
 )
 
 data class Current(
