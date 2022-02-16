@@ -9,4 +9,11 @@
         <item name="android:fontFamily">@font/ubuntu_regular</item>
     </style>
 
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="fontFamily">@font/ubuntu_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/ubuntu_medium</item>
+    </style>
+
 </resources>
