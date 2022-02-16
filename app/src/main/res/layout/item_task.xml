@@ -92,7 +92,7 @@
             android:focusable="true"
             android:fontFamily="@font/ubuntu_regular"
             android:padding="@dimen/_6sdp"
-            android:text="@string/update"
+            android:text="@string/delete"
             android:textColor="@color/colorTextPrimary"
             android:textSize="@dimen/_14ssp"
             app:drawableStartCompat="@drawable/ic_delete"

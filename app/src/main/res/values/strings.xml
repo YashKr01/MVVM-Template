@@ -38,6 +38,9 @@
 
     <string name="the_hobbit">The Hobbit</string>
     <string name="the_famous_five">The Famous Five</string>
+    <string name="update_task">Update Task</string>
+    <string name="delete">Delete</string>
+    <string name="high">High</string>
 
     <string-array name="priorities">
         <item>High</item>

@@ -32,7 +32,7 @@ class TaskViewHolder(
 
         binding.apply {
             itemTaskTitle.text = task.title
-            itemTaskDate.text = task.date.toString()
+            itemTaskDate.text = task.date
             when (task.priority) {
                 PRIORITY_HIGH -> {
                     ImageViewCompat.setImageTintList(
@@ -56,7 +56,7 @@ class TaskViewHolder(
                         )
                     )
                 }
-                PRIORITY_LOW -> {
+                else -> {
                     ImageViewCompat.setImageTintList(
                         itemTaskPriority,
                         ColorStateList.valueOf(
@@ -68,6 +68,7 @@ class TaskViewHolder(
                     )
                 }
             }
+
         }
 
     }

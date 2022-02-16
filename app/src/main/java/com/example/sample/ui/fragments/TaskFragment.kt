@@ -1,6 +1,7 @@
 package com.example.sample.ui.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -67,6 +68,7 @@ class TaskFragment : Fragment() {
                 if (it.isNullOrEmpty()) {
                     binding.textEmptyText.show()
                     binding.progressBar.hide()
+                    taskAdapter.submitList(it)
                 } else {
                     binding.progressBar.hide()
                     binding.textEmptyText.hide()

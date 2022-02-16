@@ -4,7 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
     id 'dagger.hilt.android.plugin'
-    id 'androidx.navigation.safeargs.kotlin'
+    id 'androidx.navigation.safeargs'
     id 'com.google.gms.google-services'
 }
 
@@ -64,8 +64,8 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
 
     // ViewModel & LiveData
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha01'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-alpha01'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha02'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-alpha02'
 
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'

@@ -56,8 +56,4 @@ class AppRepository @Inject constructor(
 
     suspend fun deleteArticle(task: TaskEntity) = dao.deleteTask(task)
 
-    fun getAllCategories() = dao.getAllCategories()
-
-    suspend fun insertCategory(categoryEntity: CategoryEntity) = dao.insertCategory(categoryEntity)
-
 }

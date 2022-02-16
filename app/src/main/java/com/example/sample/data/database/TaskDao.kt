@@ -18,10 +18,4 @@ interface TaskDao {
     @Delete
     suspend fun deleteTask(taskEntity: TaskEntity)
 
-    @Query("SELECT * FROM categoryentity")
-    fun getAllCategories(): Flow<List<CategoryEntity>>
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertCategory(categoryEntity: CategoryEntity)
-
 }
