@@ -41,6 +41,7 @@
     <string name="update_task">Update Task</string>
     <string name="delete">Delete</string>
     <string name="high">High</string>
+    <string name="cancel">Cancel</string>
 
     <string-array name="priorities">
         <item>High</item>
